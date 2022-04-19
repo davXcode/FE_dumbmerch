@@ -30,7 +30,7 @@ export default function Complain() {
     const [state] = useContext(UserContext)
 
     useEffect(() =>{
-        socket = io( process.env.SERVER_URL_SOCKET || 'http://localhost:5000', {
+        socket = io( "https://backend-dumbmerch32.herokuapp.com/" || 'http://localhost:5000', {
             auth: {
                 token: localStorage.getItem("token")
             },
