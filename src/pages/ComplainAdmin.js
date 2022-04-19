@@ -29,7 +29,7 @@ export default function ComplainAdmin() {
     const [state] = useContext(UserContext)
 
     useEffect(() =>{
-        socket = io('http://localhost:5000', {
+        socket = io( process.env.SERVER_URL || 'http://localhost:5000', {
             auth: {
                 token: localStorage.getItem('token')
             },

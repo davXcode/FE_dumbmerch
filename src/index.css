@@ -5,8 +5,8 @@ body {
 
 /* product home */
 .card-product .img-fluid {
-  height: 250px !important;
-  width: 100% !important;
+  height: 250px;
+  width: 100%;
 }
 
 /* SCROLLBAR */
